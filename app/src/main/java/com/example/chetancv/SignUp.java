@@ -51,6 +51,12 @@ public class SignUp extends AppCompatActivity {
             return;
         }
 
+        if (password.length()>=1 && password.length()<6)
+        {
+            Toast.makeText(SignUp.this,"Password connot be less then 6 characters.",Toast.LENGTH_LONG).show();
+            return;
+        }
+
         mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
