@@ -1,41 +1,33 @@
 {
   "project_info": {
-    "project_number": "917974054003",
-    "project_id": "portfolio-943ab",
-    "storage_bucket": "portfolio-943ab.appspot.com"
+    "project_number": "46798689025",
+    "project_id": "chetanportfolio-71d6f",
+    "storage_bucket": "chetanportfolio-71d6f.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:917974054003:android:f9c56cfc82d5c06a66a606",
+        "mobilesdk_app_id": "1:46798689025:android:c761857cf52a761176c100",
         "android_client_info": {
           "package_name": "com.example.chetancv"
         }
       },
       "oauth_client": [
         {
-          "client_id": "917974054003-4vviefqh87g2tq6g0v66mliflb00tp9d.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.chetancv",
-            "certificate_hash": "41c9e89354777727ea4cf0e2ac4da247f12708b2"
-          }
-        },
-        {
-          "client_id": "917974054003-9drgodqvtplagviq9e5044rv4ej4rli8.apps.googleusercontent.com",
+          "client_id": "46798689025-uoflhr5mg3i1hemvr8lgnfdpj04fvg1j.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCiCaExeRnWtzJmQggfJ0Hw5ULcxATbNpM"
+          "current_key": "AIzaSyDdOvyOOlSN5C9El5v7lHYSQWk1vQaZyKM"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "917974054003-9drgodqvtplagviq9e5044rv4ej4rli8.apps.googleusercontent.com",
+              "client_id": "46798689025-uoflhr5mg3i1hemvr8lgnfdpj04fvg1j.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

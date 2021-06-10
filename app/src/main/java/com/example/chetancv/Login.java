@@ -41,7 +41,16 @@ public class Login extends AppCompatActivity {
         mAuth.signInWithEmailAndPassword(email,pass).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
-                Toast.makeText(Login.this,"Login successfull",Toast.LENGTH_LONG ).show();
+                if(task.isSuccessful())
+                {
+                    Toast.makeText(Login.this,"Login successfull",Toast.LENGTH_LONG ).show();
+                    Intent i =  new Intent(Login.this,Resume.class);
+                    finish();
+                }
+                else
+                {
+                    Toast.makeText(Login.this,"Login unsuccessfull",Toast.LENGTH_LONG ).show();
+                }
             }
         });
     }
