@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login">
+    tools:context=".SignUp">
+
 
     <LinearLayout
         android:layout_width="0dp"
@@ -24,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/colorPrimaryText"
-            android:text="Login Now"
+            android:text="Sign Up"
             />
         <TextView
             style="@style/TextAppearance.AppCompat.Body1"
@@ -32,10 +33,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:textColor="@color/colorPrimaryText"
-            android:text="Please login to continue"
+            android:text="Please enter your email address and password \n to create your account"
             />
         <EditText
-            android:id="@+id/Email"
+            android:id="@+id/sign_up_email"
             android:layout_width="match_parent"
             android:background="@drawable/edittxt_background"
             android:layout_height="wrap_content"
@@ -45,7 +46,7 @@
             android:hint="Email"
             />
         <EditText
-            android:id="@+id/etPassword"
+            android:id="@+id/sign_up_password"
             android:background="@drawable/edittxt_background"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -54,26 +55,38 @@
             android:hint="Password"
             android:textSize="16sp"
             android:inputType="textPassword"
+            />
+
+        <EditText
+            android:id="@+id/confirm_password"
+            android:background="@drawable/edittxt_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="16dp"
+            android:hint="Confirm Password"
+            android:textSize="16sp"
+            android:inputType="textPassword"
 
             />
-            <Button
-                android:background="@drawable/btn_primary"
-                android:id="@+id/btnlogin"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Login"
-                android:onClick="next"
-                android:textColor="@color/ColorPrimaryButton"
-                android:layout_marginTop="24dp"
-                />
+        <Button
+            android:background="@drawable/btn_primary"
+            android:id="@+id/btn_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIGN UP"
+            android:onClick="sign_up"
+            android:textColor="@color/ColorPrimaryButton"
+            android:layout_marginTop="24dp"
+            />
 
         <TextView
-            android:id="@+id/btnsignup"
+            android:id="@+id/btn_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:text="Don't have an account? signup"
-            android:onClick="sign"
+            android:text="Already have an account? Login."
+            android:onClick="log"
             android:textAlignment="center"
             android:textColor="@color/colorPrimaryText"
             />

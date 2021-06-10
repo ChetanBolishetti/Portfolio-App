@@ -47,11 +47,13 @@ public class Resume extends AppCompatActivity {
     public void resu(View view) {
         Intent i = new Intent(Resume.this, CV.class);
         startActivity(i);
+        finish();
     }
 
     public void link(View view) {
         Intent i = new Intent(Resume.this, Linkdin.class);
         startActivity(i);
+        finish();
     }
 
 
