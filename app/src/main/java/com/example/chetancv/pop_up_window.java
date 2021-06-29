@@ -3,11 +3,14 @@ package com.example.chetancv;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.animation.ObjectAnimator;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.Gravity;
 import android.view.View;
 import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.Transformation;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -17,17 +20,20 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+
+
 public class pop_up_window extends AppCompatActivity {
 
     DatabaseReference myref;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pop_up_window);
 
         TextView java,ds,ad,wb;
-        ProgressBar jpb,dspb,adpb,wbpb;
-        jpb = findViewById(R.id.javapb);
+        ProgressBar dspb,adpb,wbpb;
+        ProgressBar jpb = findViewById(R.id.javapb);
         dspb = findViewById(R.id.dspb);
         adpb = findViewById(R.id.androidpb);
         wbpb = findViewById(R.id.webpb);
@@ -66,15 +72,34 @@ public class pop_up_window extends AppCompatActivity {
                 ad.setText(kad);
                 wb.setText(kwb);
 
-                jpb.setProgress(fpj);
-                dspb.setProgress(fpd);
-                adpb.setProgress(fpad);
-                wbpb.setProgress(fpwbd);
+                //jpb.setProgress(fpj);
+//                dspb.setProgress();
+//                adpb.setProgress();
+//                wbpb.setProgress();
 
                 jpb.setVisibility(View.VISIBLE);
                 dspb.setVisibility(View.VISIBLE);
                 adpb.setVisibility(View.VISIBLE);
                 wbpb.setVisibility(View.VISIBLE);
+
+
+
+                ObjectAnimator progressAnimator;
+
+                progressAnimator = ObjectAnimator.ofInt(jpb, "progress", 0,fpj);
+                progressAnimator.setDuration(7000);
+                progressAnimator.start();
+                progressAnimator = ObjectAnimator.ofInt(dspb, "progress", 0,fpd);
+                progressAnimator.setDuration(7000);
+                progressAnimator.start();
+
+                progressAnimator = ObjectAnimator.ofInt(adpb, "progress", 0,fpad);
+                progressAnimator.setDuration(7000);
+                progressAnimator.start();
+
+                progressAnimator = ObjectAnimator.ofInt(wbpb, "progress", 0,fpwbd);
+                progressAnimator.setDuration(7000);
+                progressAnimator.start();
 
                 cpb.setVisibility(View.INVISIBLE);
 
@@ -101,4 +126,35 @@ public class pop_up_window extends AppCompatActivity {
         getWindow().setAttributes(parms);
 
     }
+
+
+
 }
+
+//class ProgressBarAnimation extends Animation {
+//    private ProgressBar progressBar;
+//    private float from;
+//    private float  to;
+//
+//    public ProgressBarAnimation(ProgressBar progressBar, float from, float to) {
+//        super();
+//        this.progressBar = progressBar;
+//        this.from = from;
+//        this.to = to;
+//    }
+//
+//    @Override
+//    protected void applyTransformation(float interpolatedTime, Transformation t) {
+//        super.applyTransformation(interpolatedTime, t);
+//        float value = from + (to-from) * interpolatedTime;
+//        progressBar.setProgress((int) value);
+//
+//    }
+//
+//
+//}
+
+
+
+
+
