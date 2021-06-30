@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "46798689025",
+    "project_id": "chetanportfolio-71d6f",
+    "storage_bucket": "chetanportfolio-71d6f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46798689025:android:c761857cf52a761176c100",
+        "android_client_info": {
+          "package_name": "com.example.chetancv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "46798689025-uoflhr5mg3i1hemvr8lgnfdpj04fvg1j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdOvyOOlSN5C9El5v7lHYSQWk1vQaZyKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "46798689025-uoflhr5mg3i1hemvr8lgnfdpj04fvg1j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

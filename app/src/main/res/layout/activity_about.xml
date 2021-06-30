@@ -22,6 +22,7 @@
         android:gravity="center_vertical"
         >
         <TextView
+            android:id="@+id/pi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Personal Information"
@@ -30,46 +31,45 @@
             android:textStyle="bold"
             />
         <TextView
+            android:id="@+id/pname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Name : Chetan U Bolishetti"
             android:layout_marginTop="12dp"
             style="@style/TextAppearance.AppCompat.Title"
             android:textColor="@color/colorPrimaryButtonBg"
             />
 
         <TextView
+            android:id="@+id/pqua"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/colorPrimaryButtonBg" />
+
+        <TextView
+            android:id="@+id/pclg"
             android:layout_marginTop="12dp"
             style="@style/TextAppearance.AppCompat.Title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Qualification : BCA"
             android:textColor="@color/colorPrimaryButtonBg"
             />
 
         <TextView
-            android:layout_marginTop="12dp"
-            style="@style/TextAppearance.AppCompat.Title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="College : PTES Belgaum"
-            android:textColor="@color/colorPrimaryButtonBg"
-            />
-
-        <TextView
+            android:id="@+id/pnum"
             android:layout_marginTop="12dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Mobile : 9742672487"
             style="@style/TextAppearance.AppCompat.Title"
             android:textColor="@color/colorPrimaryButtonBg"
             />
         <TextView
+            android:id="@+id/pemail"
             android:layout_marginTop="12dp"
             style="@style/TextAppearance.AppCompat.Title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Email : Chetanbolishetti8@gmail.com"
             android:textColor="@color/colorPrimaryButtonBg"
             />
     </LinearLayout>
@@ -87,4 +87,13 @@
         app:menu="@menu/menu_navigation"
         />
 
+    <ProgressBar
+        android:id="@+id/apb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

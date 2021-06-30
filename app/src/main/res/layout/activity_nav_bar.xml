@@ -29,18 +29,18 @@
             android:textStyle="bold"
             />
         <TextView
+            android:id="@+id/proj1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Attendance App : An android appllication for the attendence of the students."
             android:layout_marginTop="12dp"
             style="@style/TextAppearance.AppCompat.Title"
             android:textColor="@color/colorPrimaryButtonBg"
             />
 
         <TextView
+            android:id="@+id/proj2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="News App : An android application to view news with images with help of api."
             android:layout_marginTop="12dp"
             style="@style/TextAppearance.AppCompat.Title"
             android:textColor="@color/colorPrimaryButtonBg"
@@ -60,6 +60,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:menu="@menu/menu_navigation"
         />
-
+<ProgressBar
+    android:id="@+id/propb"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
